@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7/jBU26F54A=",
+  "dgSpecHash": "txEU6OaNxGc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ankit\\Source\\Repos\\BookVerse\\BookVerse.csproj",
+  "projectFilePath": "C:\\Users\\ankit\\source\\repos\\BookVerse\\BookVerse.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ankit\\.nuget\\packages\\communitytoolkit.maui\\9.0.2\\communitytoolkit.maui.9.0.2.nupkg.sha512",
     "C:\\Users\\ankit\\.nuget\\packages\\communitytoolkit.maui.core\\9.0.2\\communitytoolkit.maui.core.9.0.2.nupkg.sha512",
