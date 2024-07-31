@@ -70,6 +70,10 @@
               "target": "Package",
               "version": "[9.0.2, )"
             },
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.2.2, )"
+            },
             "FirebaseAuthentication.net": {
               "target": "Package",
               "version": "[4.1.0, )"
@@ -80,11 +84,11 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.70, )"
+              "version": "[8.0.71, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.70, )"
+              "version": "[8.0.71, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
@@ -121,6 +125,10 @@
               "target": "Package",
               "version": "[9.0.2, )"
             },
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.2.2, )"
+            },
             "FirebaseAuthentication.net": {
               "target": "Package",
               "version": "[4.1.0, )"
@@ -131,11 +139,11 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.70, )"
+              "version": "[8.0.71, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.70, )"
+              "version": "[8.0.71, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
@@ -172,6 +180,10 @@
               "target": "Package",
               "version": "[9.0.2, )"
             },
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.2.2, )"
+            },
             "FirebaseAuthentication.net": {
               "target": "Package",
               "version": "[4.1.0, )"
@@ -182,11 +194,11 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.70, )"
+              "version": "[8.0.71, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.70, )"
+              "version": "[8.0.71, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
@@ -224,6 +236,10 @@
               "target": "Package",
               "version": "[9.0.2, )"
             },
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.2.2, )"
+            },
             "FirebaseAuthentication.net": {
               "target": "Package",
               "version": "[4.1.0, )"
@@ -234,11 +250,11 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.70, )"
+              "version": "[8.0.71, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.70, )"
+              "version": "[8.0.71, )"
             }
           },
           "imports": [
