@@ -1,0 +1,84 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:BookVerse.ViewModels"
+             xmlns:models="clr-namespace:BookVerse.Models"
+             xmlns:mct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="BookVerse.Views.LoginView"
+             x:DataType="viewmodels:LoginViewModel">
+
+    <ContentPage.BindingContext>
+        <viewmodels:LoginViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Behaviors>
+        <mct:EventToCommandBehavior Command="{Binding GetCommand}" EventName="Appearing" />
+    </ContentPage.Behaviors>
+
+
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+
+            <Label
+        Text="BookVerse"
+        Style="{StaticResource Headline}"
+        SemanticProperties.HeadingLevel="Level1"
+        HorizontalOptions="Center" />
+
+            <Frame
+                WidthRequest="185"
+                HeightRequest="185"
+                CornerRadius="92.5"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                IsClippedToBounds="True"
+                BorderColor="Transparent"
+                Padding="0">
+                <Image
+                    Source="books.png"
+                    Aspect="Center"
+                    HeightRequest="185"
+                    WidthRequest="185"
+                    SemanticProperties.Description="Book Image." />
+            </Frame>
+
+            <Label
+            Text="Login"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1" />
+
+            <Entry
+            Placeholder="Username" Text="{Binding Email}"
+            SemanticProperties.Description="Enter your username" />
+
+            <Entry
+            Placeholder="Password"
+            Text="{Binding Password}" IsPassword="True"
+            SemanticProperties.Description="Enter your password" />
+
+            <Button
+            Text="Login"  Command="{Binding SignInCommand}"
+            SemanticProperties.Hint="Login to your account"
+            HorizontalOptions="Fill" />
+
+            <Button
+            Text="Create New Account"  Command="{Binding SignUpCommand}"
+            SemanticProperties.Hint="Create account"
+            HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+
+        <!--<StackLayout>
+        <Label Text="Email"/>
+        <Entry x:Name="Email" Placeholder="Email Address" Text="{Binding Email}"/>
+        <Label Text="Password"/>
+        <Entry x:Name="Password" Placeholder="Password" Text="{Binding Password}" IsPassword="True"/>
+
+        <Button Text="Sign-In" Command="{Binding SignInCommand}"/>
+        <Button Text="Create New Account" Command="{Binding SignUpCommand}"/>
+
+            <Label x:Name="Result"  Text="{Binding Message}"/>
+            </StackLayout>-->
+
+    </ScrollView>
+</ContentPage>
