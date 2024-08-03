@@ -1,7 +1,20 @@
-﻿using BookVerse.Models;
+/*using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BookVerse.ViewModels
+{
+    internal class HomeViewModel
+    {
+    }
+}*/
+
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 
 namespace BookVerse.ViewModels
 {
@@ -35,8 +48,15 @@ namespace BookVerse.ViewModels
 
         private void OnFilter(string filter)
         {
+            // Filter books based on the filter parameter (Latest, Popular, Trending)
             // Implement your filtering logic here
-            // You may filter BestSellers or any other collection
         }
+    }
+
+    public class Book
+    {
+        public string Image { get; set; }
+        public string Title { get; set; }
+        public string Rating { get; set; }
     }
 }

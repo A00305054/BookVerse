@@ -47,6 +47,7 @@ appiconWideTile.scale-150.png
 appiconWideTile.scale-200.png
 appiconWideTile.scale-400.png
 bitter.scale-100.png
+bookmarks.scale-100.png
 books.scale-100.png
 dead_silence.scale-100.png
 dotnet_bot.scale-100.png
@@ -54,9 +55,13 @@ dotnet_bot.scale-125.png
 dotnet_bot.scale-150.png
 dotnet_bot.scale-200.png
 dotnet_bot.scale-400.png
+home.scale-100.png
 hunt_the_stars.scale-100.png
+library.scale-100.png
 mickey7.scale-100.png
 moon_witch.scale-100.png
+notifications.scale-100.png
+search.scale-100.png
 splashSplashScreen.scale-100.png
 splashSplashScreen.scale-125.png
 splashSplashScreen.scale-150.png

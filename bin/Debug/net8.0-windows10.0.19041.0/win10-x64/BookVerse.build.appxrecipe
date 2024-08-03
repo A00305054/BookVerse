@@ -202,6 +202,9 @@
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bitter.scale-100.png">
       <PackagePath>bitter.scale-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bookmarks.scale-100.png">
+      <PackagePath>bookmarks.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\books.scale-100.png">
       <PackagePath>books.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -223,14 +226,26 @@
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-100.png">
+      <PackagePath>home.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\hunt_the_stars.scale-100.png">
       <PackagePath>hunt_the_stars.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\library.scale-100.png">
+      <PackagePath>library.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mickey7.scale-100.png">
       <PackagePath>mickey7.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\moon_witch.scale-100.png">
       <PackagePath>moon_witch.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notifications.scale-100.png">
+      <PackagePath>notifications.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\search.scale-100.png">
+      <PackagePath>search.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BookVerse.deps.json">
       <PackagePath>BookVerse.deps.json</PackagePath>

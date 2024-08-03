@@ -68,17 +68,5 @@
             HorizontalOptions="Fill" />
         </VerticalStackLayout>
 
-        <!--<StackLayout>
-        <Label Text="Email"/>
-        <Entry x:Name="Email" Placeholder="Email Address" Text="{Binding Email}"/>
-        <Label Text="Password"/>
-        <Entry x:Name="Password" Placeholder="Password" Text="{Binding Password}" IsPassword="True"/>
-
-        <Button Text="Sign-In" Command="{Binding SignInCommand}"/>
-        <Button Text="Create New Account" Command="{Binding SignUpCommand}"/>
-
-            <Label x:Name="Result"  Text="{Binding Message}"/>
-            </StackLayout>-->
-
     </ScrollView>
 </ContentPage>

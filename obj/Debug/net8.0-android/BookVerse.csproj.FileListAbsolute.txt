@@ -1086,3 +1086,7 @@ C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-android\stamp\_ConvertRes
 C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-android\resizetizer\r\drawable\notifications.png
+C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-android\resizetizer\r\drawable\bookmarks.png
+C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-android\resizetizer\r\drawable\library.png
+C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-android\resizetizer\r\drawable\home.png

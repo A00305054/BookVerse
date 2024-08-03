@@ -3,17 +3,26 @@
     x:Class="BookVerse.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:BookVerse.Views"
+    xmlns:views="clr-namespace:BookVerse.Views"
     Shell.FlyoutBehavior="Disabled"
     Title="BookVerse">
 
+    
+
     <ShellContent
         Title="Login"
-        ContentTemplate="{DataTemplate local:LoginView}"
+        ContentTemplate="{DataTemplate views:LoginView}"
         Route="LoginView" />
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:HomeView}"
+        ContentTemplate="{DataTemplate views:HomeView}"
         Route="HomeView" />
+    <TabBar>
+        <ShellContent Icon="home.png" Route="home" ContentTemplate="{DataTemplate views:HomeView}" />
+        <!--<ShellContent Title="Search" Icon="search.png" Route="search" ContentTemplate="{DataTemplate views:SearchView}" />
+    <ShellContent Title="Books" Icon="library.png" Route="books" ContentTemplate="{DataTemplate views:BooksView}" />
+    <ShellContent Title="Bookmarks" Icon="bookmarks.png" Route="bookmarks" ContentTemplate="{DataTemplate views:BookmarksView}" />
+    <ShellContent Title="Notifications" Icon="notifications.png" Route="notifications" ContentTemplate="{DataTemplate views:NotificationsView}" />-->
+    </TabBar>
 
 </Shell>

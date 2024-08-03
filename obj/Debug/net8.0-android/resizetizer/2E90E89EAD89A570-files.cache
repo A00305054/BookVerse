@@ -1,9 +1,13 @@
 ﻿obj\Debug\net8.0-android\resizetizer\r\drawable\bitter.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\bookmarks.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\books.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\dead_silence.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\home.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\hunt_the_stars.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\library.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\mickey7.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\moon_witch.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\notifications.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\dotnet_bot.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\dotnet_bot.png
