@@ -43,7 +43,7 @@ namespace BookVerse.ViewModels
 
             if (success)
             {
-                await Shell.Current.GoToAsync($"///{nameof(Views.ActivityListView)}");
+                await Shell.Current.GoToAsync($"///{nameof(Views.HomeView)}");
             }
         }
 
@@ -54,7 +54,7 @@ namespace BookVerse.ViewModels
 
             if (success)
             {
-                await Shell.Current.GoToAsync($"///{nameof(Views.ActivityListView)}");
+                await Shell.Current.GoToAsync($"///{nameof(Views.HomeView)}");
             }
         }
     }

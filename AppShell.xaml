@@ -11,9 +11,9 @@
         Title="Login"
         ContentTemplate="{DataTemplate local:LoginView}"
         Route="LoginView" />
-    <!--   <ShellContent
- Title="Home"
- ContentTemplate="{DataTemplate local:HomeView}"
- Route="HomeView" />-->
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:HomeView}"
+        Route="HomeView" />
 
 </Shell>

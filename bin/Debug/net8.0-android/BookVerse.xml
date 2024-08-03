@@ -4,37 +4,37 @@
         <name>BookVerse</name>
     </assembly>
     <members>
-        <member name="T:BookVerse.Model.Author">
+        <member name="T:BookVerse.Models.Author">
             <summary>
             Represents an author with biographical details and works.
             Contains attributes such as Name, BirthDate, Nationality, Biography, and ProfileImageUrl.
             </summary>
         </member>
-        <member name="T:BookVerse.Model.Book">
+        <member name="T:BookVerse.Models.Book">
             <summary>
             Represents a book in the library with relevant details.
-            Contains attributes such as Title, Author, PublicationDate, ISBN, Genre, and CoverImageUrl.
+            Contains attributes such as Image, Title, and Rating.
             </summary>
         </member>
-        <member name="T:BookVerse.Model.BorrowModel">
+        <member name="T:BookVerse.Models.BorrowModel">
             <summary>
             Represents a loan record of a book to a library member.
             Contains attributes such as BookId, MemberId, LoanDate, DueDate, and ReturnDate.
             </summary>
         </member>
-        <member name="T:BookVerse.Model.Librarian">
+        <member name="T:BookVerse.Models.Librarian">
             <summary>
             Represents a librarian with personal and employment details.
             Contains attributes such as Name, EmployeeId, Email, and PhoneNumber.
             </summary>
         </member>
-        <member name="T:BookVerse.Model.LibraryBranch">
+        <member name="T:BookVerse.Models.LibraryBranch">
             <summary>
             Represents a library branch with its details.
             Contains attributes such as Name, Location, ContactNumber, and OpeningHours.
             </summary>
         </member>
-        <member name="T:BookVerse.Model.Member">
+        <member name="T:BookVerse.Models.Member">
             <summary>
             Represents a library member with personal and contact details.
             Contains attributes such as Name, Email, MembershipDate, and PhoneNumber.

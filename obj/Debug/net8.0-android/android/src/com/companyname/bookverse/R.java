@@ -11502,7 +11502,7 @@ public final class R {
     public static final int design_password_eye=0x7f070087;
     public static final int design_snackbar_background=0x7f070088;
     public static final int dotnet_bot=0x7f070089;
-    public static final int hunt_stars=0x7f07008a;
+    public static final int hunt_the_stars=0x7f07008a;
     public static final int ic_arrow_back_black_24=0x7f07008b;
     public static final int ic_call_answer=0x7f07008c;
     public static final int ic_call_answer_low=0x7f07008d;
@@ -11545,7 +11545,7 @@ public final class R {
     public static final int maui_splash=0x7f0700b2;
     public static final int maui_splash_image=0x7f0700b3;
     public static final int mickey7=0x7f0700b4;
-    public static final int moon_witch_spider_king=0x7f0700b5;
+    public static final int moon_witch=0x7f0700b5;
     public static final int mtrl_bottomsheet_drag_handle=0x7f0700b6;
     public static final int mtrl_checkbox_button=0x7f0700b7;
     public static final int mtrl_checkbox_button_checked_unchecked=0x7f0700b8;

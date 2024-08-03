@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:BookVerse.ViewModels"
+             xmlns:models="clr-namespace:BookVerse.Models"
+             xmlns:mct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="BookVerse.Views.HomeView"
+             x:DataType="viewmodels:HomeViewModel">
+
+    <ContentPage.BindingContext>
+        <viewmodels:HomeViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="20">
+            <!-- Header -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Label Text="BookVerse"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center" />
+                <ImageButton Source="user_profile.png"
+                             HeightRequest="40"
+                             WidthRequest="40"
+                             Grid.Column="1" />
+            </Grid>
+
+            <!-- Best Seller Section -->
+            <Label Text="Best Seller" 
+                   FontSize="20" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center" />
+
+            <CollectionView ItemsSource="{Binding BestSellers}"
+                            ItemsLayout="HorizontalList">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Book">
+                        <Frame HasShadow="False"
+                               BorderColor="Transparent"
+                               Padding="0"
+                               Margin="10,0">
+                            <StackLayout>
+                                <Image Source="{Binding Image}" HeightRequest="200" WidthRequest="140" />
+                                <Label Text="{Binding Title}" 
+                                       FontAttributes="Bold" 
+                                       HorizontalOptions="Center" 
+                                       LineBreakMode="TailTruncation"
+                                       MaxLines="2" />
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <!-- Filter Buttons -->
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Text="Latest" Command="{Binding FilterCommand}" CommandParameter="Latest" Grid.Column="0" />
+                <Button Text="Popular" Command="{Binding FilterCommand}" CommandParameter="Popular" Grid.Column="1" />
+                <Button Text="Trending" Command="{Binding FilterCommand}" CommandParameter="Trending" Grid.Column="2" />
+            </Grid>
+
+            <!-- Filtered Books Section -->
+            <CollectionView ItemsSource="{Binding FilteredBooks}"
+                            ItemsLayout="HorizontalList">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Book">
+                        <Frame HasShadow="False"
+                               BorderColor="Transparent"
+                               Padding="0"
+                               Margin="10,0">
+                            <StackLayout>
+                                <Image Source="{Binding Image}" HeightRequest="140" WidthRequest="100" />
+                                <Label Text="{Binding Title}" 
+                                       FontAttributes="Bold" 
+                                       HorizontalOptions="Center" 
+                                       LineBreakMode="TailTruncation"
+                                       MaxLines="2" />
+                                <Label Text="{Binding Rating}" 
+                                       FontAttributes="Italic" 
+                                       HorizontalOptions="Center" />
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
