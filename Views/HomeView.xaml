@@ -31,12 +31,11 @@
                            FontSize="24"
                            FontAttributes="Bold"
                            VerticalOptions="Center" />
-                    <ImageButton Source="settings.png"
+                    <ImageButton Source="setting.png"
                                  HeightRequest="30"
                                  WidthRequest="30"
                                  Grid.Column="1" 
                                  Margin="10,0"/>
-                    <ImageButton Source="setting.png" Grid.Column="3" HeightRequest="40" WidthRequest="40"/>
                     <ImageButton Source="user_profile.png"
                                  HeightRequest="40"
                                  WidthRequest="40"
@@ -117,12 +116,13 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <ImageButton Source="home.png" Grid.Column="0" HeightRequest="40" WidthRequest="30"/>
             <ImageButton Source="search.png" Grid.Column="1" HeightRequest="40" WidthRequest="30"/>
             <ImageButton Source="library.png" Grid.Column="2" HeightRequest="40" WidthRequest="30"/>
-            <ImageButton Source="notifications.png" Grid.Column="4" HeightRequest="40" WidthRequest="30"/>
             <ImageButton Source="bookmarks.png" Grid.Column="3" HeightRequest="40" WidthRequest="30"/>
+            <ImageButton Source="notifications.png" Grid.Column="4" HeightRequest="40" WidthRequest="30"/>
         </Grid>
     </Grid>
 
