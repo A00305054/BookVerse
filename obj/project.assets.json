@@ -35757,24 +35757,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vishw\\.nuget\\packages\\": {},
+    "C:\\Users\\ankit\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vishw\\source\\repos\\BookVerse\\BookVerse.csproj",
+      "projectUniqueName": "C:\\Users\\ankit\\Source\\Repos\\BookVerse\\BookVerse.csproj",
       "projectName": "BookVerse",
-      "projectPath": "C:\\Users\\vishw\\source\\repos\\BookVerse\\BookVerse.csproj",
-      "packagesPath": "C:\\Users\\vishw\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vishw\\source\\repos\\BookVerse\\obj\\",
+      "projectPath": "C:\\Users\\ankit\\Source\\Repos\\BookVerse\\BookVerse.csproj",
+      "packagesPath": "C:\\Users\\ankit\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ankit\\Source\\Repos\\BookVerse\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\vishw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ankit\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

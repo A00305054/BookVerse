@@ -11,89 +11,119 @@
         <viewmodels:HomeViewModel />
     </ContentPage.BindingContext>
 
-    <ScrollView>
-        <StackLayout Padding="20" Spacing="20">
-            <!-- Header -->
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="Auto" />
-                </Grid.ColumnDefinitions>
-                <Label Text="BookVerse"
-                       FontSize="24"
-                       FontAttributes="Bold"
-                       VerticalOptions="Center" />
-                <ImageButton Source="user_profile.png"
-                             HeightRequest="40"
-                             WidthRequest="40"
-                             Grid.Column="1" />
-            </Grid>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
 
-            <!-- Best Seller Section -->
-            <Label Text="Best Seller" 
-                   FontSize="20" 
-                   FontAttributes="Bold" 
-                   HorizontalOptions="Center" />
+        <ScrollView Grid.Row="1">
+            <StackLayout Padding="20" Spacing="20">
+                <!-- Header -->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Label Text="BookVerse"
+                           FontSize="24"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center" />
+                    <ImageButton Source="settings.png"
+                                 HeightRequest="30"
+                                 WidthRequest="30"
+                                 Grid.Column="1" 
+                                 Margin="10,0"/>
+                    <ImageButton Source="setting.png" Grid.Column="3" HeightRequest="40" WidthRequest="40"/>
+                    <ImageButton Source="user_profile.png"
+                                 HeightRequest="40"
+                                 WidthRequest="40"
+                                 Grid.Column="2"
+                                 Margin="10,0"/>
+                </Grid>
 
-            <CollectionView ItemsSource="{Binding BestSellers}"
-                            ItemsLayout="HorizontalList">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="models:Book">
-                        <Frame HasShadow="False"
-                               BorderColor="Transparent"
-                               Padding="0"
-                               Margin="10,0">
-                            <StackLayout>
-                                <Image Source="{Binding Image}" HeightRequest="200" WidthRequest="140" />
-                                <Label Text="{Binding Title}" 
-                                       FontAttributes="Bold" 
-                                       HorizontalOptions="Center" 
-                                       LineBreakMode="TailTruncation"
-                                       MaxLines="2" />
-                            </StackLayout>
-                        </Frame>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
+                <!-- Best Seller Section -->
+                <Label Text="Best Seller" 
+                       FontSize="20" 
+                       FontAttributes="Bold" 
+                       HorizontalOptions="Center" />
 
-            <!-- Filter Buttons -->
-            <Grid ColumnSpacing="10">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Button Text="Latest" Command="{Binding FilterCommand}" CommandParameter="Latest" Grid.Column="0" />
-                <Button Text="Popular" Command="{Binding FilterCommand}" CommandParameter="Popular" Grid.Column="1" />
-                <Button Text="Trending" Command="{Binding FilterCommand}" CommandParameter="Trending" Grid.Column="2" />
-            </Grid>
+                <CollectionView ItemsSource="{Binding BestSellers}"
+                                ItemsLayout="HorizontalList">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:Book">
+                            <Frame HasShadow="False"
+                                   BorderColor="Transparent"
+                                   Padding="0"
+                                   Margin="10,0">
+                                <StackLayout>
+                                    <Image Source="{Binding Image}" HeightRequest="200" WidthRequest="140" />
+                                    <Label Text="{Binding Title}" 
+                                           FontAttributes="Bold" 
+                                           HorizontalOptions="Center" 
+                                           LineBreakMode="TailTruncation"
+                                           MaxLines="2" />
+                                </StackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
 
-            <!-- Filtered Books Section -->
-            <CollectionView ItemsSource="{Binding FilteredBooks}"
-                            ItemsLayout="HorizontalList">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="models:Book">
-                        <Frame HasShadow="False"
-                               BorderColor="Transparent"
-                               Padding="0"
-                               Margin="10,0">
-                            <StackLayout>
-                                <Image Source="{Binding Image}" HeightRequest="140" WidthRequest="100" />
-                                <Label Text="{Binding Title}" 
-                                       FontAttributes="Bold" 
-                                       HorizontalOptions="Center" 
-                                       LineBreakMode="TailTruncation"
-                                       MaxLines="2" />
-                                <Label Text="{Binding Rating}" 
-                                       FontAttributes="Italic" 
-                                       HorizontalOptions="Center" />
-                            </StackLayout>
-                        </Frame>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
+                <!-- Filter Buttons -->
+                <Grid ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button Text="Latest" Command="{Binding FilterCommand}" CommandParameter="Latest" Grid.Column="0" />
+                    <Button Text="Popular" Command="{Binding FilterCommand}" CommandParameter="Popular" Grid.Column="1" />
+                    <Button Text="Trending" Command="{Binding FilterCommand}" CommandParameter="Trending" Grid.Column="2" />
+                </Grid>
 
-        </StackLayout>
-    </ScrollView>
+                <!-- Filtered Books Section -->
+                <CollectionView ItemsSource="{Binding FilteredBooks}"
+                                ItemsLayout="HorizontalList">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:Book">
+                            <Frame HasShadow="False"
+                                   BorderColor="Transparent"
+                                   Padding="0"
+                                   Margin="10,0">
+                                <StackLayout>
+                                    <Image Source="{Binding Image}" HeightRequest="140" WidthRequest="100" />
+                                    <Label Text="{Binding Title}" 
+                                           FontAttributes="Bold" 
+                                           HorizontalOptions="Center" 
+                                           LineBreakMode="TailTruncation"
+                                           MaxLines="2" />
+                                    <Label Text="{Binding Rating}" 
+                                           FontAttributes="Italic" 
+                                           HorizontalOptions="Center" />
+                                </StackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Footer Navigation -->
+        <Grid Grid.Row="2" ColumnSpacing="0" BackgroundColor="LightGray">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <ImageButton Source="home.png" Grid.Column="0" HeightRequest="40" WidthRequest="30"/>
+            <ImageButton Source="search.png" Grid.Column="1" HeightRequest="40" WidthRequest="30"/>
+            <ImageButton Source="library.png" Grid.Column="2" HeightRequest="40" WidthRequest="30"/>
+            <ImageButton Source="notifications.png" Grid.Column="4" HeightRequest="40" WidthRequest="30"/>
+            <ImageButton Source="bookmarks.png" Grid.Column="3" HeightRequest="40" WidthRequest="30"/>
+        </Grid>
+    </Grid>
 
 </ContentPage>
