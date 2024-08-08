@@ -633,3 +633,4 @@ C:\Users\ankit\source\repos\BookVerse\obj\Debug\net8.0-maccatalyst\maccatalyst-x
 C:\Users\ankit\source\repos\BookVerse\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\BookVerse.csproj.Up2Date
 C:\Users\ankit\source\repos\BookVerse\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\BookVerse.genruntimeconfig.cache
 C:\Users\ankit\source\repos\BookVerse\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ref\BookVerse.dll
+C:\Users\ankit\source\repos\BookVerse\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\setting.png

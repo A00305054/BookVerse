@@ -651,3 +651,12 @@ C:\Users\ankit\source\repos\BookVerse\obj\Debug\net8.0-ios\iossimulator-x64\refi
 C:\Users\ankit\source\repos\BookVerse\obj\Debug\net8.0-ios\iossimulator-x64\BookVerse.pdb
 C:\Users\ankit\source\repos\BookVerse\obj\Debug\net8.0-ios\iossimulator-x64\BookVerse.genruntimeconfig.cache
 C:\Users\ankit\source\repos\BookVerse\obj\Debug\net8.0-ios\iossimulator-x64\ref\BookVerse.dll
+C:\Users\ankit\source\repos\BookVerse\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\MauiInfo.plist
+C:\Users\ankit\source\repos\BookVerse\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\MauiSplash.storyboard
+C:\Users\ankit\source\repos\BookVerse\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449.png
+C:\Users\ankit\source\repos\BookVerse\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449@2x.png
+C:\Users\ankit\source\repos\BookVerse\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449@3x.png
+C:\Users\ankit\source\repos\BookVerse\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\setting.png
+C:\Users\ankit\source\repos\BookVerse\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\f\MauiInfo.plist
+C:\Users\ankit\source\repos\BookVerse\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\f\OpenSans-Regular.ttf
+C:\Users\ankit\source\repos\BookVerse\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\f\OpenSans-Semibold.ttf

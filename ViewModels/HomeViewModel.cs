@@ -1,20 +1,7 @@
-/*using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BookVerse.ViewModels
-{
-    internal class HomeViewModel
-    {
-    }
-}*/
-
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.Collections.ObjectModel;
-using System.Threading.Tasks;
+using BookVerse.Models;
 
 namespace BookVerse.ViewModels
 {
@@ -38,12 +25,12 @@ namespace BookVerse.ViewModels
         private void LoadBooks()
         {
             // Load books into BestSellers and FilteredBooks
-            BestSellers.Add(new Book { Image = "dead_silence.png", Title = "Dead Silence", Rating = "4.5" });
-            BestSellers.Add(new Book { Image = "bitter.png", Title = "Bitter", Rating = "4.2" });
+            BestSellers.Add(new Book { Image = "dead_silence.png", Title = "Dead Silence", Rating = "4.5", Author = "S.A. Barnes", Description = "Titanic meets The Shining in S.A. Barnes’ Dead Silence, a SF horror novel in which a woman and her crew board a decades-lost luxury cruiser and find the wreckage of a nightmare that hasn’t yet ended." });
+            BestSellers.Add(new Book { Image = "bitter.png", Title = "Bitter", Rating = "4.2", Author = "Author Name", Description = "Description for Bitter" });
 
-            FilteredBooks.Add(new Book { Image = "hunt_the_stars.png", Title = "Hunt the Stars", Rating = "4.0" });
-            FilteredBooks.Add(new Book { Image = "moon_witch.png", Title = "Moon Witch, Spider King", Rating = "4.3" });
-            FilteredBooks.Add(new Book { Image = "mickey7.png", Title = "Mickey7", Rating = "4.1" });
+            FilteredBooks.Add(new Book { Image = "hunt_the_stars.png", Title = "Hunt the Stars", Rating = "4.0", Author = "Author Name", Description = "Description for Hunt the Stars" });
+            FilteredBooks.Add(new Book { Image = "moon_witch.png", Title = "Moon Witch, Spider King", Rating = "4.3", Author = "Author Name", Description = "Description for Moon Witch, Spider King" });
+            FilteredBooks.Add(new Book { Image = "mickey7.png", Title = "Mickey7", Rating = "4.1", Author = "Author Name", Description = "Description for Mickey7" });
         }
 
         private void OnFilter(string filter)
@@ -52,11 +39,5 @@ namespace BookVerse.ViewModels
             // Implement your filtering logic here
         }
     }
-
-    public class Book
-    {
-        public string Image { get; set; }
-        public string Title { get; set; }
-        public string Rating { get; set; }
-    }
 }
+

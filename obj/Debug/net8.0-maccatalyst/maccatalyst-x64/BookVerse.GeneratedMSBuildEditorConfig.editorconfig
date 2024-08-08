@@ -52,6 +52,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = BookVerse.Views.ActivityLi
 build_metadata.AdditionalFiles.TargetPath = Views\ActivityListView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\ActivityListView.xaml
 
+[C:/Users/ankit/source/repos/BookVerse/Views/BookDetailsView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BookVerse.Views.BookDetailsView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\BookDetailsView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\BookDetailsView.xaml
+
 [C:/Users/ankit/source/repos/BookVerse/Views/HomeView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BookVerse.Views.HomeView.xaml

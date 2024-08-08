@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodels="clr-namespace:BookVerse.ViewModels"
              xmlns:models="clr-namespace:BookVerse.Models"
-             xmlns:mct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="BookVerse.Views.HomeView"
              x:DataType="viewmodels:HomeViewModel">
 
@@ -50,7 +49,9 @@
                        HorizontalOptions="Center" />
 
                 <CollectionView ItemsSource="{Binding BestSellers}"
-                                ItemsLayout="HorizontalList">
+                                ItemsLayout="HorizontalList"
+                                SelectionMode="Single"
+                                SelectionChanged="OnItemSelected">
                     <CollectionView.ItemTemplate>
                         <DataTemplate x:DataType="models:Book">
                             <Frame HasShadow="False"
@@ -84,7 +85,9 @@
 
                 <!-- Filtered Books Section -->
                 <CollectionView ItemsSource="{Binding FilteredBooks}"
-                                ItemsLayout="HorizontalList">
+                                ItemsLayout="HorizontalList"
+                                SelectionMode="Single"
+                                SelectionChanged="OnItemSelected">
                     <CollectionView.ItemTemplate>
                         <DataTemplate x:DataType="models:Book">
                             <Frame HasShadow="False"
@@ -125,5 +128,4 @@
             <ImageButton Source="notifications.png" Grid.Column="4" HeightRequest="40" WidthRequest="30"/>
         </Grid>
     </Grid>
-
 </ContentPage>
