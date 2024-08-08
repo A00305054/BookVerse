@@ -16,13 +16,12 @@ namespace BookVerse.ViewModels
                 OnPropertyChanged();
             }
         }
-        // Parameterless constructor for XAML instantiation
+
         public BookDetailsViewModel()
         {
         }
 
-
-        public BookDetailsViewModel(BookVerse.Models.Book book)
+        public BookDetailsViewModel(Book book)
         {
             SelectedBook = book;
         }

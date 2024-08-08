@@ -6,10 +6,15 @@ namespace BookVerse.Views
 {
     public partial class BookDetailsView : ContentPage
     {
-        public BookDetailsView(BookVerse.Models.Book book)
+        public BookDetailsView(Book book)
         {
             InitializeComponent();
             BindingContext = new BookDetailsViewModel(book);
+        }
+
+        private async void OnBackButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
         }
     }
 }
