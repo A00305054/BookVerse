@@ -3,47 +3,58 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BookVerse.Views.BookDetailsView"
              Title="Book Details"
-             BackgroundColor="#a6d3e8">
+             BackgroundColor="#E0F7FA">
 
     <ScrollView>
-        <StackLayout Padding="16" Spacing="16">
+        <StackLayout Padding="16" Spacing="20">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
-                <ImageButton Source="back_icon.png"
+                <ImageButton Source="back_button.png"
                              Grid.Column="0"
                              HorizontalOptions="Start"
                              VerticalOptions="Center"
+                             HeightRequest="40"
+                             WidthRequest="40"
                              Clicked="OnBackButtonClicked" />
-                <ImageButton Source="bookmark_icon.png"
+                <ImageButton Source="bookmarks.png"
                              Grid.Column="1"
                              HorizontalOptions="End"
+                             HeightRequest="40"
+                             WidthRequest="40"
                              VerticalOptions="Center" />
             </Grid>
 
-            <Image Source="{Binding SelectedBook.Image}" HeightRequest="300" Aspect="AspectFill" HorizontalOptions="Center" />
+            <Image Source="{Binding SelectedBook.Image}" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
 
-            <Label Text="{Binding SelectedBook.Title}" FontSize="28" FontAttributes="Bold" HorizontalOptions="Center" />
+            <Label Text="{Binding SelectedBook.Title}" FontSize="28" FontAttributes="Bold" HorizontalOptions="Center" TextColor="#333333" />
 
-            <Label Text="{Binding SelectedBook.Author}" FontSize="18" HorizontalOptions="Center" />
+            <Label Text="{Binding SelectedBook.Author}" FontSize="18" HorizontalOptions="Center" TextColor="#777777" />
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
-                <Button Text="Horror" BackgroundColor="#DDDDDD" CornerRadius="20" Padding="10"/>
-                <Button Text="Sci-Fi" BackgroundColor="#DDDDDD" CornerRadius="20" Padding="10"/>
-                <Button Text="Fantasy" BackgroundColor="#DDDDDD" CornerRadius="20" Padding="10"/>
+                <Button Text="Horror" BackgroundColor="#C54444" TextColor="White" CornerRadius="20" Padding="10"/>
+                <Button Text="Sci-Fi" BackgroundColor="#4482C5" TextColor="White" CornerRadius="20" Padding="10"/>
+                <Button Text="Fantasy" BackgroundColor="#634848" TextColor="White" CornerRadius="20" Padding="10"/>
             </StackLayout>
 
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="2">
-                <Label Text="{Binding SelectedBook.Rating}" FontAttributes="Bold" FontSize="14"/>
-                <Label Text=" | " FontAttributes="Bold" FontSize="14"/>
-                <Label Text="2,736 ratings · 777 reviews" FontSize="14"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="5">
+                <Label Text="{Binding SelectedBook.Rating}" FontAttributes="Bold" FontSize="14" TextColor="#FFA000"/>
+                <Label Text="|" FontAttributes="Bold" FontSize="14" TextColor="#BDBDBD"/>
+                <Label Text="2,736 ratings · 777 reviews" FontSize="14" TextColor="#757575"/>
             </StackLayout>
 
-            <Label Text="{Binding SelectedBook.Description}" FontSize="16" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+          
+                <Label Text="{Binding SelectedBook.Description}" 
+                       FontSize="16" 
+                       HorizontalOptions="FillAndExpand" 
+                       VerticalOptions="CenterAndExpand" 
+                       HorizontalTextAlignment="Start"
+                       TextColor="#333333"/>
+            
 
-            <Button Text="Read Now" FontSize="20" BackgroundColor="#2196F3" TextColor="White" CornerRadius="10" Padding="10" HorizontalOptions="Center" />
+            <Button Text="Read Now" FontSize="20" BackgroundColor="#0288D1" TextColor="White" CornerRadius="10" Padding="10" HorizontalOptions="Center" WidthRequest="200"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>
