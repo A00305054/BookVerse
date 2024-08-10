@@ -17,10 +17,6 @@ namespace BookVerse.ViewModels
             }
         }
 
-        public BookDetailsViewModel()
-        {
-        }
-
         public BookDetailsViewModel(Book book)
         {
             SelectedBook = book;

@@ -27,7 +27,12 @@
                              VerticalOptions="Center" />
             </Grid>
 
-            <Image Source="{Binding SelectedBook.Image}" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+            <Image Source="{Binding SelectedBook.Image}" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" HeightRequest="1200" WidthRequest="800">
+                <Image.Clip>
+                    <RoundRectangleGeometry CornerRadius="20"
+                                Rect="0,0,800,1200" />
+                </Image.Clip>
+            </Image> 
 
             <Label Text="{Binding SelectedBook.Title}" FontSize="28" FontAttributes="Bold" HorizontalOptions="Center" TextColor="#333333" />
 
@@ -54,7 +59,15 @@
                        TextColor="#333333"/>
             
 
-            <Button Text="Read Now" FontSize="20" BackgroundColor="#0288D1" TextColor="White" CornerRadius="10" Padding="10" HorizontalOptions="Center" WidthRequest="200"/>
+            <Button Text="Read Now" 
+                    FontSize="20" 
+                    BackgroundColor="#0288D1" 
+                    TextColor="White" 
+                    CornerRadius="10" 
+                    Padding="10" 
+                    HorizontalOptions="Center" 
+                    WidthRequest="200"
+                    Clicked="OnReadNowClicked"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

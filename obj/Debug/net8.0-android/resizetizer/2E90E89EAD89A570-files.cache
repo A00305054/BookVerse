@@ -1,4 +1,6 @@
-﻿obj\Debug\net8.0-android\resizetizer\r\drawable\bitter.png
+﻿obj\Debug\net8.0-android\resizetizer\r\drawable\back_button.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\back_icon.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\bitter.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\bookmarks.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\books.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\dead_silence.png

@@ -16,5 +16,17 @@ namespace BookVerse.Views
         {
             await Navigation.PopAsync();
         }
+        private async void OnReadNowClicked(object sender, EventArgs e)
+        {
+            // Get the selected book from the ViewModel
+            var viewModel = BindingContext as BookDetailsViewModel;
+            var selectedBook = viewModel?.SelectedBook;
+
+            if (selectedBook != null)
+            {
+                // Navigate to the ReadBookView, passing the necessary information
+                await Navigation.PushAsync(new ReadBookView(selectedBook.Title, "Book Content here",100));
+            }
+        }
     }
 }

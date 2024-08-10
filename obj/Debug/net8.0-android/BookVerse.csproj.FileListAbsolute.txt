@@ -2184,3 +2184,7 @@ C:\Users\ankit\source\repos\BookVerse\obj\Debug\net8.0-android\resizetizer\f\Ope
 C:\Users\ankit\source\repos\BookVerse\obj\Debug\net8.0-android\resizetizer\f\OpenSans-Semibold.ttf
 C:\Users\ankit\source\repos\BookVerse\obj\Debug\net8.0-android\resizetizer\r\drawable\setting.png
 C:\Users\ankit\source\repos\BookVerse\obj\Debug\net8.0-android\resizetizer\A52E68AE06E1868A-files.cache
+C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-android\resizetizer\r\drawable\search.png
+C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-android\resizetizer\r\drawable\setting.png
+C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-android\resizetizer\r\drawable\back_button.png
+C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-android\resizetizer\r\drawable\back_icon.png

@@ -79,6 +79,9 @@
 	  <MauiXaml Update="Views\HomeView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\ReadBookView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 
 	  <None Update="Views\HomeView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
