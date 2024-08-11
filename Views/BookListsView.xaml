@@ -1,35 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BookVerse.Views.BookListsView"
-             Title="Book Lists">
+             Title="Books List">
 
-    <StackLayout Padding="20" Spacing="20">
-        <Label Text="Borrowed Books"
-               FontSize="18"
-               FontAttributes="Bold"/>
+    <StackLayout Padding="10">
+
+        <!-- Borrowed Books Section -->
+        <Label Text="Borrowed Books" 
+               FontSize="24" 
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
         <CollectionView ItemsSource="{Binding BorrowedBooks}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout Padding="10">
-                        <Label Text="{Binding Title}" FontSize="16" />
+                        <Label Text="{Binding Title}" FontSize="18" FontAttributes="Bold" />
                         <Label Text="{Binding Author}" FontSize="14" TextColor="Gray" />
+                        <Label Text="{Binding Description}" FontSize="14" TextColor="Gray" />
                     </StackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
 
-        <Label Text="Reserved Books"
-               FontSize="18"
-               FontAttributes="Bold"/>
+        <!-- Reserved Books Section -->
+        <Label Text="Reserved Books" 
+               FontSize="24" 
+               FontAttributes="Bold"
+               HorizontalOptions="Center" 
+               Margin="0,20,0,0"/>
+
         <CollectionView ItemsSource="{Binding ReservedBooks}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout Padding="10">
-                        <Label Text="{Binding Title}" FontSize="16" />
+                        <Label Text="{Binding Title}" FontSize="18" FontAttributes="Bold" />
                         <Label Text="{Binding Author}" FontSize="14" TextColor="Gray" />
+                        <Label Text="{Binding Description}" FontSize="14" TextColor="Gray" />
                     </StackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
+
     </StackLayout>
 </ContentPage>

@@ -21,5 +21,9 @@ namespace BookVerse.Views
                 await Navigation.PushAsync(new BookDetailsView(selectedBook.ISBN));
             }
         }
+        private async void OnViewBookListsClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new BookListsView());
+        }
     }
 }

@@ -4,14 +4,24 @@
              x:Class="BookVerse.Views.HomeView"
              Title="Home">
 
-    <Grid RowDefinitions="Auto, *">
-        <SearchBar Grid.Row="0" 
+    <Grid RowDefinitions="Auto, Auto, *">
+        <!-- Updated: Added a new row at the top for the button -->
+
+        <!-- New Button to Navigate to BookListsView -->
+        <Button Grid.Row="0" 
+                Text="View All Books" 
+                Clicked="OnViewBookListsClicked" 
+                HorizontalOptions="Center" 
+                VerticalOptions="End"
+                Margin="0,10,0,10"/>
+
+        <SearchBar Grid.Row="1" 
                    Placeholder="Search books..."
                    SearchCommand="{Binding SearchCommand}"
                    SearchCommandParameter="{Binding Text, Source={x:Reference searchBar}}" 
                    x:Name="searchBar"/>
 
-        <CollectionView Grid.Row="1" 
+        <CollectionView Grid.Row="2" 
                         ItemsSource="{Binding Books}" 
                         SelectionMode="Single" 
                         SelectionChanged="OnSelectionChanged">
