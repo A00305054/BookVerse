@@ -68,6 +68,10 @@
 
 	<ItemGroup>
  
+	  <Compile Update="Views\BookListsView.xaml.cs">
+	    <DependentUpon>BookListsView.xaml</DependentUpon>
+	  </Compile>
+ 
 	  <Compile Update="Views\HomeView.xaml.cs">
 	    <DependentUpon>HomeView.xaml</DependentUpon>
 	  </Compile>
@@ -75,6 +79,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="Views\BookDetailsView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\BookListsView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\BorrowReserveView.xaml">
@@ -93,6 +100,9 @@
 
 		<Compile Update="Views\BookDetailsView.xaml.cs">
 			<DependentUpon>BookDetailsView.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="Views\BookListsView.xaml.cs">
+			<DependentUpon>BookListsView.xaml</DependentUpon>
 		</Compile>
 		<Compile Update="Views\BorrowReserveView.xaml.cs">
 			<DependentUpon>BorrowReserveView.xaml</DependentUpon>

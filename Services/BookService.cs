@@ -1,7 +1,7 @@
-﻿using System.Net.Http;
+﻿using Newtonsoft.Json;
+using System.Net.Http;
 using System.Threading.Tasks;
-using Newtonsoft.Json.Linq;
-using BookVerse.Models;
+using BookVerse.Models; // Ensure correct namespace is used
 
 namespace BookVerse.Services
 {
@@ -14,37 +14,41 @@ namespace BookVerse.Services
             _httpClient = new HttpClient();
         }
 
-        public async Task<List<Book>> GetBooksAsync(string query)
+        // Implement the GetBooksAsync method if not already implemented
+        public async Task<List<BookVerse.Models.Book>> GetBooksAsync(string query)
         {
             string url = $"https://www.googleapis.com/books/v1/volumes?q={query}";
             HttpResponseMessage response = await _httpClient.GetAsync(url);
-            var books = new List<Book>();
 
             if (response.IsSuccessStatusCode)
             {
                 string json = await response.Content.ReadAsStringAsync();
-                JObject bookData = JObject.Parse(json);
+                var bookData = JsonConvert.DeserializeObject<dynamic>(json);
 
-                foreach (var item in bookData["items"])
+                var books = new List<BookVerse.Models.Book>();
+
+                foreach (var item in bookData.items)
                 {
-                    var book = new Book
+                    var book = new BookVerse.Models.Book
                     {
-                        Title = (string)item["volumeInfo"]["title"],
-                        Author = string.Join(", ", item["volumeInfo"]["authors"]),
-                        Description = (string)item["volumeInfo"]["description"],
-                        Image = (string)item["volumeInfo"]["imageLinks"]["thumbnail"],
-                        Rating = (string)item["volumeInfo"]["averageRating"],
-                        ISBN = (string)item["volumeInfo"]["industryIdentifiers"]?.FirstOrDefault()?["identifier"]
+                        Title = item.volumeInfo.title,
+                        Author = string.Join(", ", item.volumeInfo.authors.ToObject<string[]>()),
+                        Description = item.volumeInfo.description,
+                        Image = item.volumeInfo.imageLinks?.thumbnail,
+                        ISBN = item.volumeInfo.industryIdentifiers?.First?.identifier,
+                        TotalPages = item.volumeInfo.pageCount
                     };
-
                     books.Add(book);
                 }
+
+                return books;
             }
 
-            return books;
+            return new List<BookVerse.Models.Book>(); // Return an empty list if the request was not successful
         }
 
-        public async Task<Book> GetBookInfo(string isbn)
+        // Implement the GetBookInfo method
+        public async Task<BookVerse.Models.Book> GetBookInfo(string isbn)
         {
             string url = $"https://www.googleapis.com/books/v1/volumes?q=isbn:{isbn}";
             HttpResponseMessage response = await _httpClient.GetAsync(url);
@@ -52,22 +56,22 @@ namespace BookVerse.Services
             if (response.IsSuccessStatusCode)
             {
                 string json = await response.Content.ReadAsStringAsync();
-                JObject bookData = JObject.Parse(json);
+                var bookData = JsonConvert.DeserializeObject<dynamic>(json);
 
-                var book = new Book
+                var book = new BookVerse.Models.Book
                 {
-                    Title = (string)bookData["items"][0]["volumeInfo"]["title"],
-                    Author = string.Join(", ", bookData["items"][0]["volumeInfo"]["authors"]),
-                    Description = (string)bookData["items"][0]["volumeInfo"]["description"],
-                    Image = (string)bookData["items"][0]["volumeInfo"]["imageLinks"]["thumbnail"],
-                    Rating = (string)bookData["items"][0]["volumeInfo"]["averageRating"],
-                    ISBN = isbn // Use the ISBN provided
+                    Title = bookData.items[0].volumeInfo.title,
+                    Author = string.Join(", ", bookData.items[0].volumeInfo.authors.ToObject<string[]>()),
+                    Description = bookData.items[0].volumeInfo.description,
+                    Image = bookData.items[0].volumeInfo.imageLinks?.thumbnail,
+                    ISBN = bookData.items[0].volumeInfo.industryIdentifiers?.First?.identifier,
+                    TotalPages = bookData.items[0].volumeInfo.pageCount
                 };
 
                 return book;
             }
 
-            return null;
+            return null; // Return null if the request was not successful
         }
     }
 }

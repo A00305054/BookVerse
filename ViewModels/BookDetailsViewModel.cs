@@ -1,15 +1,15 @@
 ﻿using System.Windows.Input;
-using BookVerse.Models;
 using BookVerse.Views;
 using BookVerse.Services;
 using Microsoft.Maui.Controls;
+using ModelBook = BookVerse.Models.Book; // Alias for the Book class in Models
 
 namespace BookVerse.ViewModels
 {
     public class BookDetailsViewModel : BindableObject
     {
         private readonly BookService _bookService;
-        public Book SelectedBook { get; private set; }
+        public ModelBook SelectedBook { get; private set; } // Use the alias here
 
         public ICommand BorrowCommand { get; }
         public ICommand ReserveCommand { get; }
