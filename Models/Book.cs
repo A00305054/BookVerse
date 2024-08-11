@@ -12,5 +12,7 @@ namespace BookVerse.Models
         public string Description { get; set; }
         public string Content { get; set; }
         public string TotalPages { get; set; }
+        public bool IsBorrowed { get; set; } = true;  
+        public bool IsReserved { get; set; } = false;  
     }
 }

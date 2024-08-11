@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookVerse.Views.BorrowReserveView"
+             Title="{Binding ActionTitle}"
+             BackgroundColor="#F5F5F5">
+
+    <StackLayout Padding="20" Spacing="20">
+        <Label Text="{Binding SelectedBook.Title}" 
+               FontSize="24" 
+               FontAttributes="Bold" 
+               HorizontalOptions="Center" 
+               TextColor="#333333"/>
+
+        <Label Text="{Binding SelectedBook.Author}" 
+               FontSize="18" 
+               HorizontalOptions="Center" 
+               TextColor="#777777"/>
+
+        <Image Source="{Binding SelectedBook.Image}" 
+               HeightRequest="300" 
+               Aspect="AspectFill" 
+               HorizontalOptions="Center"/>
+
+        <Label Text="{Binding ActionMessage}"
+               FontSize="18"
+               TextColor="#333333"
+               HorizontalOptions="Center"/>
+
+        <Button Text="{Binding ActionButtonText}"
+                BackgroundColor="{Binding ActionButtonColor}"
+                TextColor="White"
+                Command="{Binding ActionCommand}"
+                CornerRadius="10"
+                Padding="10"
+                HorizontalOptions="Center"/>
+
+        <Button Text="Cancel"
+                BackgroundColor="#B0BEC5"
+                TextColor="White"
+                Command="{Binding CancelCommand}"
+                CornerRadius="10"
+                Padding="10"
+                HorizontalOptions="Center"/>
+    </StackLayout>
+</ContentPage>

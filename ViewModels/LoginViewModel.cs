@@ -2,6 +2,7 @@
 using CommunityToolkit.Mvvm.Input;
 using System.Threading.Tasks;
 using BookVerse.Services;
+using BookVerse.Views;
 using Microsoft.Maui.Controls;
 
 namespace BookVerse.ViewModels
@@ -43,7 +44,12 @@ namespace BookVerse.ViewModels
 
             if (success)
             {
-                await Shell.Current.GoToAsync($"//home");
+                await Application.Current.MainPage.Navigation.PushAsync(new HomeView());
+            }
+            else
+            {
+                // Show error message if login fails
+                await Application.Current.MainPage.DisplayAlert("Error", "Login failed. Please try again.", "OK");
             }
         }
 
@@ -54,7 +60,12 @@ namespace BookVerse.ViewModels
 
             if (success)
             {
-                await Shell.Current.GoToAsync($"//home");
+                await Application.Current.MainPage.Navigation.PushAsync(new HomeView());
+            }
+            else
+            {
+                // Show error message if sign-up fails
+                await Application.Current.MainPage.DisplayAlert("Error", "Sign-up failed. Please try again.", "OK");
             }
         }
     }

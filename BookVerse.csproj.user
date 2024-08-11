@@ -9,6 +9,9 @@
     <MauiXaml Update="Views\BookDetailsView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\BorrowReserveView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\HomeView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

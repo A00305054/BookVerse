@@ -8,17 +8,14 @@
              BackgroundColor="#a6d3e8"
              Title="Login">
 
-    <!-- Binding the ViewModel -->
     <ContentPage.BindingContext>
         <viewmodels:LoginViewModel />
     </ContentPage.BindingContext>
 
-    <!-- Automatically execute a command when the page appears -->
     <ContentPage.Behaviors>
         <mct:EventToCommandBehavior Command="{Binding GetCommand}" EventName="Appearing" />
     </ContentPage.Behaviors>
 
-    <!-- ScrollView for Scrollable Content -->
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"

@@ -13,16 +13,10 @@
         Title="Login"
         ContentTemplate="{DataTemplate views:LoginView}"
         Route="LoginView" />
-    <ShellContent
+    <!--<ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate views:HomeView}"
-        Route="HomeView" />
-    <TabBar>
-        <ShellContent Icon="home.png" Route="home" ContentTemplate="{DataTemplate views:HomeView}" />
-        <!--<ShellContent Title="Search" Icon="search.png" Route="search" ContentTemplate="{DataTemplate views:SearchView}" />
-    <ShellContent Title="Books" Icon="library.png" Route="books" ContentTemplate="{DataTemplate views:BooksView}" />
-    <ShellContent Title="Bookmarks" Icon="bookmarks.png" Route="bookmarks" ContentTemplate="{DataTemplate views:BookmarksView}" />
-    <ShellContent Title="Notifications" Icon="notifications.png" Route="notifications" ContentTemplate="{DataTemplate views:NotificationsView}" />-->
-    </TabBar>
+        Route="HomeView" />-->
+    
 
 </Shell>

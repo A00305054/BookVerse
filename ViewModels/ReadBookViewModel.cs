@@ -1,6 +1,9 @@
 ﻿using Microsoft.Maui.Controls;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows.Input;
+using BookVerse.Models;
+using BookVerse.Views;
 
 namespace BookVerse.ViewModels
 {
@@ -10,6 +13,7 @@ namespace BookVerse.ViewModels
         private string _bookTitle;
         private int _currentPage;
         private int _totalPages;
+        private readonly Book _book;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -54,19 +58,53 @@ namespace BookVerse.ViewModels
             }
         }
 
-        public ReadBookViewModel(string bookTitle, string bookContent, int totalPages)
+        public ICommand PreviousPageCommand { get; }
+        public ICommand NextPageCommand { get; }
+        public ICommand NavigateToBorrowAndReserveCommand { get; }
+
+        public ReadBookViewModel(Book book)
         {
-            BookTitle = bookTitle;
-            TotalPages = totalPages;
+            _book = book;
+            BookTitle = book.Title;
+            TotalPages = int.Parse(book.TotalPages);
             CurrentPage = 1;
             LoadPageContent();
+
+            PreviousPageCommand = new Command(OnPreviousPage, () => IsPreviousPageEnabled);
+            NextPageCommand = new Command(OnNextPage, () => IsNextPageEnabled);
+            NavigateToBorrowAndReserveCommand = new Command(OnNavigateToBorrowAndReserve);
         }
 
         private void LoadPageContent()
         {
-            // Here you should load the content for the current page from your bookContent
-            // This is a placeholder for the actual implementation
-            BookContent = $"Page {CurrentPage} content...";
+            // Simulate loading content for the current page
+            BookContent = $"Content of page {CurrentPage} for book {_book.Title}...";
+            (PreviousPageCommand as Command).ChangeCanExecute();
+            (NextPageCommand as Command).ChangeCanExecute();
+        }
+
+        private void OnPreviousPage()
+        {
+            if (CurrentPage > 1)
+            {
+                CurrentPage--;
+            }
+        }
+
+        private void OnNextPage()
+        {
+            if (CurrentPage < TotalPages)
+            {
+                CurrentPage++;
+            }
+        }
+
+        public bool IsPreviousPageEnabled => CurrentPage > 1;
+        public bool IsNextPageEnabled => CurrentPage < TotalPages;
+
+        private async void OnNavigateToBorrowAndReserve()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new BorrowReserveView(_book, true));
         }
 
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null)

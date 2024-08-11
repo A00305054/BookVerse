@@ -77,6 +77,9 @@
 	  <MauiXaml Update="Views\BookDetailsView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\BorrowReserveView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\HomeView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -84,9 +87,22 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 
-	  <None Update="Views\HomeView.xaml">
+	  <!--<None Update="Views\HomeView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
-	  </None>
+	  </None>-->
+
+		<Compile Update="Views\BookDetailsView.xaml.cs">
+			<DependentUpon>BookDetailsView.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="Views\BorrowReserveView.xaml.cs">
+			<DependentUpon>BorrowReserveView.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="Views\HomeView.xaml.cs">
+			<DependentUpon>HomeView.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="Views\ReadBookView.xaml.cs">
+			<DependentUpon>ReadBookView.xaml</DependentUpon>
+		</Compile>
 	</ItemGroup>
 
 </Project>
