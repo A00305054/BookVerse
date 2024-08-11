@@ -6,26 +6,40 @@ namespace BookVerse.Views
 {
     public partial class BookDetailsView : ContentPage
     {
-        public BookDetailsView(Book book)
+        public BookDetailsView(string isbn)
         {
             InitializeComponent();
-            BindingContext = new BookDetailsViewModel(book);
+            BindingContext = new BookDetailsViewModel(isbn);
         }
 
         private async void OnBackButtonClicked(object sender, EventArgs e)
         {
             await Navigation.PopAsync();
         }
+
         private async void OnReadNowClicked(object sender, EventArgs e)
         {
-            // Get the selected book from the ViewModel
             var viewModel = BindingContext as BookDetailsViewModel;
-            var selectedBook = viewModel?.SelectedBook;
+            var book = viewModel?.SelectedBook;
 
-            if (selectedBook != null)
+            if (book != null)
             {
-                // Navigate to the ReadBookView, passing the necessary information
-                await Navigation.PushAsync(new ReadBookView(selectedBook.Title, "Book Content here",100));
+                if (!string.IsNullOrEmpty(book.Content))
+                {
+                    await DisplayAlert("Error", "Book content is missing.", "OK");
+                    return;
+                }
+
+                if (string.IsNullOrEmpty(book.TotalPages) || !int.TryParse(book.TotalPages, out int totalPages))
+                {
+                    await DisplayAlert("Error", "Total pages information is missing or invalid.", "OK");
+                    return;
+                }
+                await Navigation.PushAsync(new ReadBookView(book.Title, book.Content, int.Parse(book.TotalPages)));
+            }
+            else
+            {
+                await DisplayAlert("Error", "Book details are missing.", "OK");
             }
         }
     }

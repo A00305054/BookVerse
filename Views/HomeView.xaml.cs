@@ -1,7 +1,7 @@
-using System.Linq;
 using Microsoft.Maui.Controls;
 using BookVerse.Models;
 using BookVerse.ViewModels;
+using BookVerse.Views;
 
 namespace BookVerse.Views
 {
@@ -13,12 +13,12 @@ namespace BookVerse.Views
             BindingContext = new HomeViewModel();
         }
 
-        async void OnItemSelected(object sender, SelectionChangedEventArgs e)
+        private async void OnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var selectedBook = e.CurrentSelection.FirstOrDefault() as Book;
             if (selectedBook != null)
             {
-                await Navigation.PushAsync(new BookDetailsView(selectedBook));
+                await Navigation.PushAsync(new BookDetailsView(selectedBook.ISBN));
             }
         }
     }

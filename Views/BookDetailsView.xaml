@@ -7,57 +7,11 @@
 
     <ScrollView>
         <StackLayout Padding="16" Spacing="20">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="Auto" />
-                </Grid.ColumnDefinitions>
-                <ImageButton Source="back_button.png"
-                             Grid.Column="0"
-                             HorizontalOptions="Start"
-                             VerticalOptions="Center"
-                             HeightRequest="40"
-                             WidthRequest="40"
-                             Clicked="OnBackButtonClicked" />
-                <ImageButton Source="bookmarks.png"
-                             Grid.Column="1"
-                             HorizontalOptions="End"
-                             HeightRequest="40"
-                             WidthRequest="40"
-                             VerticalOptions="Center" />
-            </Grid>
-
-            <Image Source="{Binding SelectedBook.Image}" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" HeightRequest="1200" WidthRequest="800">
-                <Image.Clip>
-                    <RoundRectangleGeometry CornerRadius="20"
-                                Rect="0,0,800,1200" />
-                </Image.Clip>
-            </Image> 
-
+            <Image Source="{Binding SelectedBook.Image}" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" HeightRequest="1200" WidthRequest="800" />
             <Label Text="{Binding SelectedBook.Title}" FontSize="28" FontAttributes="Bold" HorizontalOptions="Center" TextColor="#333333" />
-
             <Label Text="{Binding SelectedBook.Author}" FontSize="18" HorizontalOptions="Center" TextColor="#777777" />
-
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
-                <Button Text="Horror" BackgroundColor="#C54444" TextColor="White" CornerRadius="20" Padding="10"/>
-                <Button Text="Sci-Fi" BackgroundColor="#4482C5" TextColor="White" CornerRadius="20" Padding="10"/>
-                <Button Text="Fantasy" BackgroundColor="#634848" TextColor="White" CornerRadius="20" Padding="10"/>
-            </StackLayout>
-
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="5">
-                <Label Text="{Binding SelectedBook.Rating}" FontAttributes="Bold" FontSize="14" TextColor="#FFA000"/>
-                <Label Text="|" FontAttributes="Bold" FontSize="14" TextColor="#BDBDBD"/>
-                <Label Text="2,736 ratings · 777 reviews" FontSize="14" TextColor="#757575"/>
-            </StackLayout>
-
-          
-                <Label Text="{Binding SelectedBook.Description}" 
-                       FontSize="16" 
-                       HorizontalOptions="FillAndExpand" 
-                       VerticalOptions="CenterAndExpand" 
-                       HorizontalTextAlignment="Start"
-                       TextColor="#333333"/>
-            
+            <Label Text="{Binding SelectedBook.Description}" FontSize="16" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Start" TextColor="#333333"/>
+            <Label Text="{Binding SelectedBook.Rating}" FontAttributes="Bold" FontSize="14" TextColor="#FFA000"/>
 
             <Button Text="Read Now" 
                     FontSize="20" 

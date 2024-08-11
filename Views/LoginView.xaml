@@ -1,72 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodels="clr-namespace:BookVerse.ViewModels"
-             xmlns:models="clr-namespace:BookVerse.Models"
              xmlns:mct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="BookVerse.Views.LoginView"
-             x:DataType="viewmodels:LoginViewModel">
+             x:DataType="viewmodels:LoginViewModel"
+             BackgroundColor="#a6d3e8"
+             Title="Login">
 
+    <!-- Binding the ViewModel -->
     <ContentPage.BindingContext>
         <viewmodels:LoginViewModel />
     </ContentPage.BindingContext>
 
+    <!-- Automatically execute a command when the page appears -->
     <ContentPage.Behaviors>
         <mct:EventToCommandBehavior Command="{Binding GetCommand}" EventName="Appearing" />
     </ContentPage.Behaviors>
 
-
+    <!-- ScrollView for Scrollable Content -->
     <ScrollView>
         <VerticalStackLayout
-        Padding="30,0"
-        Spacing="25">
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="CenterAndExpand">
 
+            <!-- App Name Label -->
             <Label
-        Text="BookVerse"
-        Style="{StaticResource Headline}"
-        SemanticProperties.HeadingLevel="Level1"
-        HorizontalOptions="Center" />
+                Text="BookVerse"
+                FontSize="36"
+                FontAttributes="Bold"
+                TextColor="#3b3b3b"
+                HorizontalOptions="Center" />
 
-            <Frame
-                WidthRequest="185"
-                HeightRequest="185"
-                CornerRadius="92.5"
+            <!-- Logo Image -->
+            <Image
+                Source="books.png"
+                Aspect="AspectFit"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
-                IsClippedToBounds="True"
-                BorderColor="Transparent"
-                Padding="0">
-                <Image
-                    Source="books.png"
-                    Aspect="Center"
-                    HeightRequest="185"
-                    WidthRequest="185"
-                    SemanticProperties.Description="Book Image." />
-            </Frame>
+                HeightRequest="200"
+                WidthRequest="200"
+                SemanticProperties.Description="Book Image." />
 
+                <!-- Login Label -->
             <Label
-            Text="Login"
-            Style="{StaticResource Headline}"
-            SemanticProperties.HeadingLevel="Level1" />
+                Text="Login"
+                FontSize="24"
+                FontAttributes="Bold"
+                TextColor="#3b3b3b"
+                HorizontalOptions="Center" />
 
+            <!-- Username Entry -->
             <Entry
-            Placeholder="Username" Text="{Binding Email}"
-            SemanticProperties.Description="Enter your username" />
+                Placeholder="Username"
+                Text="{Binding Email}"
+                FontSize="18"
+                PlaceholderColor="#9E9E9E"
+                TextColor="#000000"
+                BackgroundColor="White"
+                HeightRequest="50"
+                SemanticProperties.Description="Enter your username" />
 
+            <!-- Password Entry -->
             <Entry
-            Placeholder="Password"
-            Text="{Binding Password}" IsPassword="True"
-            SemanticProperties.Description="Enter your password" />
+                Placeholder="Password"
+                Text="{Binding Password}"
+                IsPassword="True"
+                FontSize="18"
+                PlaceholderColor="#9E9E9E"
+                TextColor="#000000"
+                BackgroundColor="White"
+                HeightRequest="50"
+                SemanticProperties.Description="Enter your password" />
 
+            <!-- Login Button -->
             <Button
-            Text="Login"  Command="{Binding SignInCommand}"
-            SemanticProperties.Hint="Login to your account"
-            HorizontalOptions="Fill" />
+                Text="Login"
+                Command="{Binding SignInCommand}"
+                BackgroundColor="#5a2dc2"
+                TextColor="White"
+                FontSize="20"
+                CornerRadius="10"
+                HeightRequest="50"
+                HorizontalOptions="FillAndExpand" />
 
+            <!-- Create New Account Button -->
             <Button
-            Text="Create New Account"  Command="{Binding SignUpCommand}"
-            SemanticProperties.Hint="Create account"
-            HorizontalOptions="Fill" />
+                Text="Create New Account"
+                Command="{Binding SignUpCommand}"
+                BackgroundColor="#5a2dc2"
+                TextColor="White"
+                FontSize="20"
+                CornerRadius="10"
+                HeightRequest="50"
+                HorizontalOptions="FillAndExpand" />
         </VerticalStackLayout>
-
     </ScrollView>
 </ContentPage>

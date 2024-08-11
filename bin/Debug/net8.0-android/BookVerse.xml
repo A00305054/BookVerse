@@ -10,12 +10,6 @@
             Contains attributes such as Name, BirthDate, Nationality, Biography, and ProfileImageUrl.
             </summary>
         </member>
-        <member name="T:BookVerse.Models.Book">
-            <summary>
-            Represents a book in the library with relevant details.
-            Contains attributes such as Image, Title, and Rating.
-            </summary>
-        </member>
         <member name="T:BookVerse.Models.BorrowModel">
             <summary>
             Represents a loan record of a book to a library member.
