@@ -13,7 +13,39 @@ namespace BookVerse.ViewModels
 
         public ObservableCollection<Book> Books { get; } = new ObservableCollection<Book>();
 
-        public string Username { get; set; }
+        private string _username;
+        public string Username
+        {
+            get => _username;
+            set
+            {
+                _username = value;
+                OnPropertyChanged(nameof(Username));
+            }
+        }
+
+        private string _phoneNumber;
+        public string PhoneNumber
+        {
+            get => _phoneNumber;
+            set
+            {
+                _phoneNumber = value;
+                OnPropertyChanged(nameof(PhoneNumber));
+            }
+        }
+
+        private string _email;
+        public string Email
+        {
+            get => _email;
+            set
+            {
+                _email = value;
+                OnPropertyChanged(nameof(Email));
+            }
+        }
+
         public ImageSource ProfilePicture { get; set; }
         public ICommand OpenSettingsCommand { get; }
         public ICommand OpenProfileCommand { get; }
@@ -24,6 +56,8 @@ namespace BookVerse.ViewModels
             LoadBooks("science fiction");
 
             Username = "Ankita Patel";
+            PhoneNumber = "123-456-7890";
+            Email = "ankitapatel@gmail.com";
             ProfilePicture = "profileimage.jpeg";
 
             OpenSettingsCommand = new Command(OpenSettings);
@@ -39,14 +73,19 @@ namespace BookVerse.ViewModels
             }
         }
 
-        private void OpenSettings()
+        private async void OpenSettings()
         {
-            // Logic to navigate to the settings page
+            var settingsViewModel = new SettingsViewModel(Username, PhoneNumber, Email);
+            var settingsPage = new SettingsView
+            {
+                BindingContext = settingsViewModel
+            };
+            await Application.Current.MainPage.Navigation.PushAsync(settingsPage);
         }
 
         private async void OpenProfile()
         {
-            var profileDetailsViewModel = new ProfileDetailsViewModel(Username, "123-456-7890", "ankita.patel@example.com", Books);
+            var profileDetailsViewModel = new ProfileDetailsViewModel(Username, PhoneNumber, Email, Books);
             var profileDetailsPage = new ProfileDetailsView
             {
                 BindingContext = profileDetailsViewModel

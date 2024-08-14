@@ -50,10 +50,19 @@ namespace BookVerse.ViewModels
             SaveCommand = new Command(SaveChanges);
         }
 
-        private void SaveChanges()
+        private async void SaveChanges()
         {
-            // Logic to save changes, such as updating a database or service
-            // You can also add navigation back to the HomeView after saving
+            // Update the HomeViewModel with the new values
+            var homeViewModel = Application.Current.MainPage.BindingContext as HomeViewModel;
+            if (homeViewModel != null)
+            {
+                homeViewModel.Username = Username;
+                homeViewModel.PhoneNumber = PhoneNumber;
+                homeViewModel.Email = Email;
+            }
+
+            // Navigate back to the HomeView
+            await Application.Current.MainPage.Navigation.PopAsync();
         }
     }
 }
