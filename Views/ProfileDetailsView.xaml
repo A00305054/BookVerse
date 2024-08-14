@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookVerse.Views.ProfileDetailsView"
+             Title="Profile Details">
+
+    <StackLayout Padding="20">
+        <Label Text="Username" FontAttributes="Bold" FontSize="Medium" />
+        <Label Text="{Binding Username}" FontSize="Large" />
+
+        <Label Text="Phone Number" FontAttributes="Bold" FontSize="Medium" Margin="0,20,0,0" />
+        <Label Text="{Binding PhoneNumber}" FontSize="Large" />
+
+        <Label Text="Email" FontAttributes="Bold" FontSize="Medium" Margin="0,20,0,0" />
+        <Label Text="{Binding Email}" FontSize="Large" />
+
+        <Label Text="Books" FontAttributes="Bold" FontSize="Medium" Margin="0,20,0,0" />
+        <CollectionView ItemsSource="{Binding Books}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Padding="5">
+                        <Label Text="{Binding Title}" FontSize="Large" FontAttributes="Bold" />
+                        <Label Text="{Binding Author}" FontSize="Medium" />
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>

@@ -395,3 +395,7 @@ C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10
 C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\ankit\Source\Repos\BookVerse\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\ankit\Source\Repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\back_button.scale-100.png
+C:\Users\ankit\Source\Repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\back_icon.scale-100.png
+C:\Users\ankit\Source\Repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\profileimage.scale-100.jpeg

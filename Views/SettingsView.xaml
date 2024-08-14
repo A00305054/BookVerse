@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BookVerse.Views.SettingsView"
+             Title="Settings">
+
+    <StackLayout Padding="20">
+        <Label Text="Change Username" FontAttributes="Bold" FontSize="Medium" />
+        <Entry Text="{Binding Username}" Placeholder="Enter new username" />
+
+        <Label Text="Change Phone Number" FontAttributes="Bold" FontSize="Medium" Margin="0,20,0,0" />
+        <Entry Text="{Binding PhoneNumber}" Placeholder="Enter new phone number" />
+
+        <Label Text="Change Email" FontAttributes="Bold" FontSize="Medium" Margin="0,20,0,0" />
+        <Entry Text="{Binding Email}" Placeholder="Enter new email address" />
+
+        <Button Text="Save Changes" Command="{Binding SaveCommand}" Margin="0,40,0,0"/>
+    </StackLayout>
+</ContentPage>
