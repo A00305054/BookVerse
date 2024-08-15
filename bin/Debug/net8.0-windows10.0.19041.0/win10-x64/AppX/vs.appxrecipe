@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\vishw\source\repos\BookVerse\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-08-15T05:40:29.456</Modified>
+      <Modified>2024-08-15T05:50:52.028</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BookVerse.dll">
       <PackagePath>BookVerse.dll</PackagePath>
-      <Modified>2024-08-15T05:40:28.865</Modified>
+      <Modified>2024-08-15T05:50:51.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>BookVerse.exe</PackagePath>
-      <Modified>2024-08-15T05:40:28.875</Modified>
+      <Modified>2024-08-15T05:50:51.447</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
