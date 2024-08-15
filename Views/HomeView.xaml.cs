@@ -7,10 +7,19 @@ namespace BookVerse.Views
 {
     public partial class HomeView : ContentPage
     {
+        private static HomeViewModel _homeViewModel;
+
         public HomeView()
         {
             InitializeComponent();
-            BindingContext = new HomeViewModel();
+            
+            // Use the existing instance if it exists; otherwise, create a new one
+            if (_homeViewModel == null)
+            {
+                _homeViewModel = new HomeViewModel();
+            }
+            
+            BindingContext = _homeViewModel;
         }
 
         private async void OnSelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -21,6 +30,7 @@ namespace BookVerse.Views
                 await Navigation.PushAsync(new BookDetailsView(selectedBook.ISBN));
             }
         }
+
         private async void OnViewBookListsClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new BookListsView());

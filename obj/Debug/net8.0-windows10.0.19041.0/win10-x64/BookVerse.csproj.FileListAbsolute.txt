@@ -399,3 +399,4 @@ C:\Users\ankit\Source\Repos\BookVerse\bin\Debug\net8.0-windows10.0.19041.0\win10
 C:\Users\ankit\Source\Repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\back_button.scale-100.png
 C:\Users\ankit\Source\Repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\back_icon.scale-100.png
 C:\Users\ankit\Source\Repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\profileimage.scale-100.jpeg
+C:\Users\vishw\Source\Repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\profileimage.scale-100.jpeg
