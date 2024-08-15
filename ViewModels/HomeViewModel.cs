@@ -1,13 +1,10 @@
-using System;
 using System.Collections.ObjectModel;
-using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using BookVerse.Models;
+using BookVerse.Views;
 using BookVerse.Services;
 using Microsoft.Maui.Controls;
-using Microsoft.Maui.Storage;
-using BookVerse.Views;
 
 namespace BookVerse.ViewModels
 {
@@ -73,12 +70,15 @@ namespace BookVerse.ViewModels
         public ICommand OpenSettingsCommand { get; }
         public ICommand OpenProfileCommand { get; }
         public ICommand UploadImageCommand { get; }
+        public ICommand SearchCommand { get; }
 
         public HomeViewModel()
         {
             _bookService = new BookService();
             LoadUserInfo();
             LoadBooks("science fiction");
+
+            SearchCommand = new Command<string>(async (query) => await LoadBooks(query));
 
             // Select a random profile picture initially
             var random = new Random();
@@ -90,10 +90,15 @@ namespace BookVerse.ViewModels
             UploadImageCommand = new Command(async () => await UploadImage());
         }
 
-        private async void LoadBooks(string query)
+        private async Task LoadBooks(string query)
         {
             var books = await _bookService.GetBooksAsync(query);
             Books.Clear();
+            if (books == null || books.Count == 0)
+            {
+                await Application.Current.MainPage.DisplayAlert("No Results", "No books found matching your query.", "OK");
+                return;
+            }
             foreach (var book in books)
             {
                 Books.Add(book);
@@ -134,8 +139,6 @@ namespace BookVerse.ViewModels
                 {
                     var stream = await result.OpenReadAsync();
                     ProfilePicture = ImageSource.FromStream(() => stream);
-
-                    
                 }
             }
             catch (Exception ex)
@@ -170,6 +173,5 @@ namespace BookVerse.ViewModels
             Preferences.Set("email", Email);
             Preferences.Set("profilePicture", ProfilePicture.ToString());
         }
-
     }
 }

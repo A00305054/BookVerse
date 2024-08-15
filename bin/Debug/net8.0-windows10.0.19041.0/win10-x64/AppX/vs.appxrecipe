@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\vishw\source\repos\BookVerse\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-08-15T03:51:36.223</Modified>
+      <Modified>2024-08-15T05:40:29.456</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-08-14T21:19:19.027</Modified>
+      <Modified>2024-08-15T05:39:49.851</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BookVerse.runtimeconfig.json">
       <PackagePath>BookVerse.runtimeconfig.json</PackagePath>
-      <Modified>2024-08-14T23:19:28.319</Modified>
+      <Modified>2024-08-15T05:39:49.766</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BookVerse.dll">
       <PackagePath>BookVerse.dll</PackagePath>
-      <Modified>2024-08-15T03:51:35.786</Modified>
+      <Modified>2024-08-15T05:40:28.865</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>BookVerse.exe</PackagePath>
-      <Modified>2024-08-15T03:51:35.792</Modified>
+      <Modified>2024-08-15T05:40:28.875</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -55,299 +55,299 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-08-14T21:01:13.318</Modified>
+      <Modified>2024-08-15T05:01:22.428</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-08-14T21:01:13.318</Modified>
+      <Modified>2024-08-15T05:01:22.446</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-08-14T21:01:13.319</Modified>
+      <Modified>2024-08-15T05:01:22.474</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-08-14T21:01:13.319</Modified>
+      <Modified>2024-08-15T05:01:22.513</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-08-14T21:01:13.320</Modified>
+      <Modified>2024-08-15T05:01:22.668</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2024-08-14T21:01:13.247</Modified>
+      <Modified>2024-08-14T21:01:03.373</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-      <Modified>2024-08-14T21:01:13.247</Modified>
+      <Modified>2024-08-14T21:01:03.373</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-08-14T21:01:32.868</Modified>
+      <Modified>2024-08-15T05:01:24.708</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.850</Modified>
+      <Modified>2024-08-15T05:01:24.693</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.850</Modified>
+      <Modified>2024-08-15T05:01:24.693</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.849</Modified>
+      <Modified>2024-08-15T05:01:24.693</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.849</Modified>
+      <Modified>2024-08-15T05:01:24.692</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.848</Modified>
+      <Modified>2024-08-15T05:01:24.692</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.861</Modified>
+      <Modified>2024-08-15T05:01:24.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.860</Modified>
+      <Modified>2024-08-15T05:01:24.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.859</Modified>
+      <Modified>2024-08-15T05:01:24.700</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.860</Modified>
+      <Modified>2024-08-15T05:01:24.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.859</Modified>
+      <Modified>2024-08-15T05:01:24.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.863</Modified>
+      <Modified>2024-08-15T05:01:24.704</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.863</Modified>
+      <Modified>2024-08-15T05:01:24.702</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.861</Modified>
+      <Modified>2024-08-15T05:01:24.702</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.861</Modified>
+      <Modified>2024-08-15T05:01:24.702</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.861</Modified>
+      <Modified>2024-08-15T05:01:24.702</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.868</Modified>
+      <Modified>2024-08-15T05:01:24.708</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.867</Modified>
+      <Modified>2024-08-15T05:01:24.707</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.867</Modified>
+      <Modified>2024-08-15T05:01:24.707</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.866</Modified>
+      <Modified>2024-08-15T05:01:24.707</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.866</Modified>
+      <Modified>2024-08-15T05:01:24.705</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.865</Modified>
+      <Modified>2024-08-15T05:01:24.705</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.865</Modified>
+      <Modified>2024-08-15T05:01:24.705</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.863</Modified>
+      <Modified>2024-08-15T05:01:24.704</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.865</Modified>
+      <Modified>2024-08-15T05:01:24.704</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.864</Modified>
+      <Modified>2024-08-15T05:01:24.704</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.855</Modified>
+      <Modified>2024-08-15T05:01:24.696</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.855</Modified>
+      <Modified>2024-08-15T05:01:24.696</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.853</Modified>
+      <Modified>2024-08-15T05:01:24.696</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.853</Modified>
+      <Modified>2024-08-15T05:01:24.696</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.852</Modified>
+      <Modified>2024-08-15T05:01:24.695</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.856</Modified>
+      <Modified>2024-08-15T05:01:24.699</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.856</Modified>
+      <Modified>2024-08-15T05:01:24.699</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.856</Modified>
+      <Modified>2024-08-15T05:01:24.698</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.856</Modified>
+      <Modified>2024-08-15T05:01:24.698</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.855</Modified>
+      <Modified>2024-08-15T05:01:24.698</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.859</Modified>
+      <Modified>2024-08-15T05:01:24.700</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.858</Modified>
+      <Modified>2024-08-15T05:01:24.700</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.858</Modified>
+      <Modified>2024-08-15T05:01:24.700</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.858</Modified>
+      <Modified>2024-08-15T05:01:24.699</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.857</Modified>
+      <Modified>2024-08-15T05:01:24.699</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.852</Modified>
+      <Modified>2024-08-15T05:01:24.695</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.851</Modified>
+      <Modified>2024-08-15T05:01:24.695</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.851</Modified>
+      <Modified>2024-08-15T05:01:24.694</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.851</Modified>
+      <Modified>2024-08-15T05:01:24.694</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.850</Modified>
+      <Modified>2024-08-15T05:01:24.694</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\back_button.scale-100.png">
       <PackagePath>back_button.scale-100.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.873</Modified>
+      <Modified>2024-08-15T05:01:24.711</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\back_icon.scale-100.png">
       <PackagePath>back_icon.scale-100.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.873</Modified>
+      <Modified>2024-08-15T05:01:24.712</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bitter.scale-100.png">
       <PackagePath>bitter.scale-100.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.873</Modified>
+      <Modified>2024-08-15T05:01:24.709</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bookmarks.scale-100.png">
       <PackagePath>bookmarks.scale-100.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.869</Modified>
+      <Modified>2024-08-15T05:01:24.712</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\books.scale-100.png">
       <PackagePath>books.scale-100.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.848</Modified>
+      <Modified>2024-08-15T05:01:24.713</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dead_silence.scale-100.png">
       <PackagePath>dead_silence.scale-100.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.872</Modified>
+      <Modified>2024-08-15T05:01:24.709</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.871</Modified>
+      <Modified>2024-08-15T05:01:24.715</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.871</Modified>
+      <Modified>2024-08-15T05:01:24.715</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.871</Modified>
+      <Modified>2024-08-15T05:01:24.715</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.871</Modified>
+      <Modified>2024-08-15T05:01:24.713</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.869</Modified>
+      <Modified>2024-08-15T05:01:24.713</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-100.png">
       <PackagePath>home.scale-100.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.872</Modified>
+      <Modified>2024-08-15T05:01:24.710</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\hunt_the_stars.scale-100.png">
       <PackagePath>hunt_the_stars.scale-100.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.876</Modified>
+      <Modified>2024-08-15T05:01:24.709</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\library.scale-100.png">
       <PackagePath>library.scale-100.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.872</Modified>
+      <Modified>2024-08-15T05:01:24.711</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mickey7.scale-100.png">
       <PackagePath>mickey7.scale-100.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.869</Modified>
+      <Modified>2024-08-15T05:01:24.709</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\moon_witch.scale-100.png">
       <PackagePath>moon_witch.scale-100.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.873</Modified>
+      <Modified>2024-08-15T05:01:24.711</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notifications.scale-100.png">
       <PackagePath>notifications.scale-100.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.876</Modified>
+      <Modified>2024-08-15T05:01:24.708</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\profileimage.scale-100.jpeg">
       <PackagePath>profileimage.scale-100.jpeg</PackagePath>
-      <Modified>2024-08-14T21:01:32.875</Modified>
+      <Modified>2024-08-15T05:01:24.710</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\search.scale-100.png">
       <PackagePath>search.scale-100.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.875</Modified>
+      <Modified>2024-08-15T05:01:24.713</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\setting.scale-100.png">
       <PackagePath>setting.scale-100.png</PackagePath>
-      <Modified>2024-08-14T21:01:32.848</Modified>
+      <Modified>2024-08-15T05:01:24.712</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\source\repos\BookVerse\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BookVerse.deps.json">
       <PackagePath>BookVerse.deps.json</PackagePath>
-      <Modified>2024-08-14T23:19:28.199</Modified>
+      <Modified>2024-08-15T05:39:49.762</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -509,6 +509,22 @@
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
       <Modified>2023-03-08T07:09:54.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\vishw\.nuget\packages\sqlite-net-pcl\1.9.172\lib\netstandard2.0\SQLite-net.dll">
+      <PackagePath>SQLite-net.dll</PackagePath>
+      <Modified>2024-03-27T22:22:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\vishw\.nuget\packages\sqlitepclraw.bundle_green\2.1.2\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+      <Modified>2022-09-18T19:28:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\vishw\.nuget\packages\sqlitepclraw.core\2.1.2\lib\netstandard2.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+      <Modified>2022-09-18T19:26:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\vishw\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.1.2\lib\net6.0-windows7.0\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+      <Modified>2022-09-18T19:27:06.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\.nuget\packages\system.speech\8.0.0\runtimes\win\lib\net8.0\System.Speech.dll">
       <PackagePath>System.Speech.dll</PackagePath>
       <Modified>2023-10-31T15:00:06.000</Modified>
@@ -656,6 +672,10 @@
     <AppxPackagedFile Include="C:\Users\vishw\.nuget\packages\microsoft.windowsappsdk\1.5.240627000\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2024-06-25T19:48:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\vishw\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.2\runtimes\win-x64\native\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+      <Modified>2022-09-18T19:20:44.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vishw\.nuget\packages\microsoft.maui.controls.compatibility\8.0.80\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

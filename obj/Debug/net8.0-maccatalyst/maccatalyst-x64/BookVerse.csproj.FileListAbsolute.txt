@@ -640,3 +640,4 @@ C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-maccatalyst\maccatalyst-x
 C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ref\BookVerse.dll
 C:\Users\ankit\Source\Repos\BookVerse\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\back_icon.png
 C:\Users\ankit\Source\Repos\BookVerse\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\back_button.png
+C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\profileimage.jpeg

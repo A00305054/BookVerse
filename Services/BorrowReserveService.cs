@@ -78,6 +78,23 @@ namespace BookVerse.Services
 
             return new List<BookVerse.Models.Book>(); // Return an empty list if the request was not successful
         }
+        public async Task TestApiResponseAsync()
+        {
+            var borrowedBooks = await GetBorrowedBooksAsync();
+            var reservedBooks = await GetReservedBooksAsync();
+
+            Console.WriteLine("Borrowed Books:");
+            foreach (var book in borrowedBooks)
+            {
+                Console.WriteLine($"Title: {book.Title}, Author: {book.Author}");
+            }
+
+            Console.WriteLine("Reserved Books:");
+            foreach (var book in reservedBooks)
+            {
+                Console.WriteLine($"Title: {book.Title}, Author: {book.Author}");
+            }
+        }
     }
 
     public class BookStatus

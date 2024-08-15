@@ -1,36 +1,17 @@
 ﻿using System.Collections.ObjectModel;
 using System.Threading.Tasks;
-using Microsoft.Maui.Controls;
 using BookVerse.Models;
 using BookVerse.Services;
+using Microsoft.Maui.Controls;
 
 namespace BookVerse.ViewModels
 {
     public class BookListsViewModel : BindableObject
     {
         private readonly BorrowReserveService _borrowReserveService;
-        private ObservableCollection<Book> _borrowedBooks;
-        private ObservableCollection<Book> _reservedBooks;
 
-        public ObservableCollection<Book> BorrowedBooks
-        {
-            get => _borrowedBooks;
-            set
-            {
-                _borrowedBooks = value;
-                OnPropertyChanged();
-            }
-        }
-
-        public ObservableCollection<Book> ReservedBooks
-        {
-            get => _reservedBooks;
-            set
-            {
-                _reservedBooks = value;
-                OnPropertyChanged();
-            }
-        }
+        public ObservableCollection<Book> BorrowedBooks { get; private set; } = new ObservableCollection<Book>();
+        public ObservableCollection<Book> ReservedBooks { get; private set; } = new ObservableCollection<Book>();
 
         public BookListsViewModel()
         {
@@ -40,11 +21,33 @@ namespace BookVerse.ViewModels
 
         private async Task LoadBooksAsync()
         {
-            var borrowedBooksList = await _borrowReserveService.GetBorrowedBooksAsync();
-            var reservedBooksList = await _borrowReserveService.GetReservedBooksAsync();
+            // Load both borrowed and reserved books when initializing the view model
+            await LoadBorrowedBooksAsync();
+            await LoadReservedBooksAsync();
+        }
 
-            BorrowedBooks = new ObservableCollection<Book>(borrowedBooksList);
-            ReservedBooks = new ObservableCollection<Book>(reservedBooksList);
+        public async Task LoadBorrowedBooksAsync()
+        {
+            // Fetch borrowed books from the service
+            var borrowedBooks = await _borrowReserveService.GetBorrowedBooksAsync();
+            BorrowedBooks.Clear();
+
+            foreach (var book in borrowedBooks)
+            {
+                BorrowedBooks.Add(book);
+            }
+        }
+
+        public async Task LoadReservedBooksAsync()
+        {
+            // Fetch reserved books from the service
+            var reservedBooks = await _borrowReserveService.GetReservedBooksAsync();
+            ReservedBooks.Clear();
+
+            foreach (var book in reservedBooks)
+            {
+                ReservedBooks.Add(book);
+            }
         }
     }
 }

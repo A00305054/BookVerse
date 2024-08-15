@@ -2200,3 +2200,4 @@ C:\Users\ankit\Source\Repos\BookVerse\obj\Debug\net8.0-android\resizetizer\r\mip
 C:\Users\ankit\Source\Repos\BookVerse\obj\Debug\net8.0-android\resizetizer\r\mipmap-xhdpi\appicon_round.png
 C:\Users\ankit\Source\Repos\BookVerse\obj\Debug\net8.0-android\resizetizer\r\mipmap-hdpi\appicon_round.png
 C:\Users\ankit\Source\Repos\BookVerse\obj\Debug\net8.0-android\resizetizer\r\mipmap-mdpi\appicon_round.png
+C:\Users\vishw\source\repos\BookVerse\obj\Debug\net8.0-android\resizetizer\r\drawable\profileimage.jpeg

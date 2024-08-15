@@ -7,7 +7,7 @@
 
     <ScrollView>
         <StackLayout Padding="16" Spacing="20">
-            <Image Source="{Binding SelectedBook.Image}" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" HeightRequest="1200" WidthRequest="800" />
+            <Image Source="{Binding SelectedBook.Image}" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" HeightRequest="1000" WidthRequest="600" />
             <Label Text="{Binding SelectedBook.Title}" FontSize="28" FontAttributes="Bold" HorizontalOptions="Center" TextColor="#333333" />
             <Label Text="{Binding SelectedBook.Author}" FontSize="18" HorizontalOptions="Center" TextColor="#777777" />
             <Label Text="{Binding SelectedBook.Description}" FontSize="16" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Start" TextColor="#333333"/>

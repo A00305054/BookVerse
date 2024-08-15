@@ -6,13 +6,14 @@
 
     <StackLayout Padding="10">
 
-        <!-- Borrowed Books Section -->
-        <Label Text="Borrowed Books" 
-               FontSize="24" 
-               FontAttributes="Bold"
-               HorizontalOptions="Center" />
+        <!-- Button to toggle Borrowed Books -->
+        <Button Text="Borrowed Books"
+                Clicked="OnBorrowedBooksClicked" />
 
-        <CollectionView ItemsSource="{Binding BorrowedBooks}">
+        <!-- CollectionView for Borrowed Books -->
+        <CollectionView x:Name="BorrowedBooksCollectionView"
+                        IsVisible="False"
+                        ItemsSource="{Binding BorrowedBooks}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout Padding="10">
@@ -24,14 +25,15 @@
             </CollectionView.ItemTemplate>
         </CollectionView>
 
-        <!-- Reserved Books Section -->
-        <Label Text="Reserved Books" 
-               FontSize="24" 
-               FontAttributes="Bold"
-               HorizontalOptions="Center" 
-               Margin="0,20,0,0"/>
+        <!-- Button to toggle Reserved Books -->
+        <Button Text="Reserved Books"
+                Clicked="OnReservedBooksClicked"
+                Margin="0,20,0,0" />
 
-        <CollectionView ItemsSource="{Binding ReservedBooks}">
+        <!-- CollectionView for Reserved Books -->
+        <CollectionView x:Name="ReservedBooksCollectionView"
+                        IsVisible="False"
+                        ItemsSource="{Binding ReservedBooks}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout Padding="10">
